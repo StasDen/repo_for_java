@@ -1,25 +1,20 @@
-package com.company;
+package com.company; // It means company.com
 
 public class Main {
 
-    // Necessary method 'main'(running the program)
-    public static void main (String[] args) {
+    public static void main(String[] args) {
 
-        // Chain of constructors
-        WaterPump firstWaterPump = new WaterPump ();
+        // Launching chain of constructors(check up console)
+	    WaterPump firstWaterPump = new WaterPump("Honda WB30XT");
+        WaterPump secondWaterPump = new WaterPump("Honda WB30XT", 300);
+        WaterPump thirdWaterPump = new WaterPump("Honda WB30XT", 300, 4);
 
-        WaterPump secondWaterPump = new WaterPump ("USA");
-
-        WaterPump thirdWaterPump = new WaterPump ("USA", "iron");
-
-        WaterPump fourthWaterPump = new WaterPump ("USA", "iron", 12);
-
-        // Method 'toString()' is used(different output)
+        System.out.println(firstWaterPump); // Method toString() is automatic(preferences of record)
         System.out.println(secondWaterPump);
         System.out.println(thirdWaterPump);
-        System.out.println(fourthWaterPump);
 
-        // Using static method(only static variable)
-        System.out.println(WaterPump.getYearInWhichWaterPumpWasCreated()); // The objects of class 'WaterPump' are instance(you shouldn't use them with static method)
+        // Using static functions
+        WaterPump.printSomeAnotherInfoAboutWaterPump(); // We can call functions like this or just import it from record 'WaterPump'
+        WaterPump.printTheYearInWhichWaterPumpWasCreated();
     }
 }

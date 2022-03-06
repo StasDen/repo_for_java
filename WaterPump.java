@@ -1,54 +1,68 @@
-package com.company; // In Java all code is in packages
+package com.company;
 
-// Record class(keyword 'final')
-public class WaterPump {
+// Using keyword 'record'(useful class with automatic getters; hashCode(), equals(), toString() methods)
+public record WaterPump(String modelOfWaterPump, int powerOfWaterPumpInWatt, int capacityOfWaterPumpInLiters) {
 
-    private final String modelOfWaterPump = "Honda WB30XT";
-    private final int powerOfWaterPumpInWatt = 300;
-    private final int capacityOfWaterPumpInLiters = 4;
+    public static final String ORIGIN_OF_WATER_PUMP = "Japan"; // The instance of writing a static variable(ORIGIN_OF_WATER_PUMP)
+    public static final String MATERIAL_OF_WATER_PUMP = "steel";
+    public static final int GUARANTEE_OF_WATER_PUMP = 24;
 
-    public String originOfWaterPump = "Japan";
-    public String materialOfWaterPump = "Steel";
-    public int guaranteeOfWaterPumpInMonths = 24;
+    static public int YEAR_IN_WHICH_WATER_PUMP_WAS_CREATED = 2017;
 
-    static public int yearInWhichWaterPumpWasCreated = 2017; // Using static variable
-
-    // Chain of constructors
+    // CHAIN OF CONSTRUCTORS
+    // Default constructor 1
+    // Default constructor will call another constructor
     public WaterPump () {
-        System.out.println("Standard water pump.");
+        // Call constructor 2
+        this("Honda WB30XT");
+
+        System.out.println("Default constructor was called");
     }
 
-    public WaterPump (String originOfWaterPump) {
-        this.originOfWaterPump = originOfWaterPump;
+    // Parametrized constructor 2
+    public WaterPump (String modelOfWaterPump) {
+        // Call constructor 3
+        this(modelOfWaterPump, 300);
 
-        System.out.println("Origin of our water pump - " + originOfWaterPump + ".");
+        System.out.println("The first parametrized constructor was called");
     }
 
-    public WaterPump (String originOfWaterPump, String materialOfWaterPump) {
-        this.originOfWaterPump  = originOfWaterPump;
-        this.materialOfWaterPump = materialOfWaterPump;
+    // Parametrized constructor 3(the same is below)
+    public WaterPump (String modelOfWaterPump, int powerOfWaterPumpInWatt) {
+        // Call constructor 4
+        this(modelOfWaterPump, powerOfWaterPumpInWatt, 4);
 
-        System.out.println("Origin of our water pump - " + originOfWaterPump + ", and it's made of " + materialOfWaterPump + ".");
+        System.out.println("The second parametrized constructor was called");
     }
 
-    // Constructor with 3 parameters
-    public WaterPump (String originOfWaterPump, String materialOfWaterPump, int guaranteeOfWaterPumpInMonths) {
-        this.originOfWaterPump = originOfWaterPump;
-        this.materialOfWaterPump = materialOfWaterPump;
-        this.guaranteeOfWaterPumpInMonths = guaranteeOfWaterPumpInMonths;
+    public WaterPump (String modelOfWaterPump, int powerOfWaterPumpInWatt, int capacityOfWaterPumpInLiters) {
+        // At the end of our chain of constructors(just this. ...)
+        // Without this(...) - the rule of creating a chain of constructors
+        this.modelOfWaterPump = modelOfWaterPump;
+        this.powerOfWaterPumpInWatt = powerOfWaterPumpInWatt;
+        this.capacityOfWaterPumpInLiters = capacityOfWaterPumpInLiters;
 
-        System.out.println("Origin of our water pump - " + originOfWaterPump + ", and it's made of " + materialOfWaterPump + "." + " Guarantee of water pump - " + guaranteeOfWaterPumpInMonths + " months.");
+        System.out.println("The third parametrized constructor was called");
     }
 
-    // Using 'toString()' method(find out more in class 'Main')
-    public String toString () {
-
-        return "The model of water pump " + "'" + modelOfWaterPump + "'" + " has power of " + powerOfWaterPumpInWatt + " watt and capacity of " + capacityOfWaterPumpInLiters + " litres.";
-    }
-
-    // Static function(for our static variable)
+    // Static func for our static variable(ONLY static variable)
     static String getYearInWhichWaterPumpWasCreated () {
 
-        return yearInWhichWaterPumpWasCreated + " - is the year, when our water pump was created.";
+        return YEAR_IN_WHICH_WATER_PUMP_WAS_CREATED + " - is the year, when our water pump was created.";
+    }
+
+    public static void printTheYearInWhichWaterPumpWasCreated () {
+
+        System.out.println(getYearInWhichWaterPumpWasCreated());
+    }
+
+    public static String getSomeAnotherInfoAboutWaterPump () {
+
+        return "The origin of our water pump is " + ORIGIN_OF_WATER_PUMP + ", and it's made of " + MATERIAL_OF_WATER_PUMP + ". Guarantee of water pump - " + GUARANTEE_OF_WATER_PUMP + " months.";
+    }
+
+    public static void printSomeAnotherInfoAboutWaterPump () {
+
+        System.out.println(getSomeAnotherInfoAboutWaterPump());
     }
 }
