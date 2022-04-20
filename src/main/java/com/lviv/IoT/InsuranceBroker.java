@@ -2,7 +2,7 @@ package com.lviv.IoT;
 
 public record InsuranceBroker(String name, double workExperienceInYears, String jobAddress, String workSchedule) {
 
-    // Chain of constructors
+    // Chain of constructors is here
     public InsuranceBroker() {
         this("James Grey");
     }

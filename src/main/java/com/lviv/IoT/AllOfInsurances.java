@@ -1,6 +1,6 @@
 package com.lviv.IoT;
 
-// One more class for using lists
+// A class for our lists
 public class AllOfInsurances {
 
     public String nameOfInsurance;

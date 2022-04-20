@@ -38,15 +38,18 @@ public class Main {
         typeToNameOfInsurance.put("casualty", casualtyList);
 
         // Checking our map
-        System.out.println(typeToNameOfInsurance);
+        System.out.println("Our map: " + typeToNameOfInsurance);
 
         // Using a method from another class
         BrokerManager brokerManager = new BrokerManager();
         brokerManager.printSomeInfoAboutInsurances();
 
-        InsuranceManager managerObj = new InsuranceManager();
-        managerObj.sortTypesOfInsurances(managerObj.advancedTypesOfInsurances);
-        managerObj.sortInsurances(casualtyList);
+        InsuranceManager insuranceManager = new InsuranceManager();
+        insuranceManager.showAdvancedTypesOfInsurances();
+
+        // In brackets of method 'sortTypesOfInsurances()' using the output of another function
+        insuranceManager.sortTypesOfInsurances(new String[]{insuranceManager.findAndShowTypesOfInsurancesOnSaleInSummer()});
+        insuranceManager.sortInsurances(casualtyList);
     }
 
 }

@@ -8,22 +8,37 @@ public class InsuranceManager {
 
     public String[] advancedTypesOfInsurances = {"vehicle", "health", "casualty", "gap", "life", "burial"};
 
-    public void sortTypesOfInsurances(String[] advancedTypesOfInsurances) {
+    public void showAdvancedTypesOfInsurances() {
+
+        System.out.println("Our advanced types of insurances: " + Arrays.toString(advancedTypesOfInsurances));
+    }
+
+    // Not all types of insurances are on sale in summer
+    public String findAndShowTypesOfInsurancesOnSaleInSummer() {
+
+        String[] typesOfInsurancesOnSaleInSummer = {"health", "casualty", "gap", "life"};
+
+        System.out.println("Our types of insurances on sale in summer: " + Arrays.toString(typesOfInsurancesOnSaleInSummer));
+
+        return Arrays.toString(typesOfInsurancesOnSaleInSummer);
+    }
+
+    public void sortTypesOfInsurances(String[] typesOfInsurances) {
 
         // Using built-in method to sort our array
-        Arrays.sort(advancedTypesOfInsurances);
-        System.out.println("Sorted types of insurances in ascending order: " + Arrays.toString(advancedTypesOfInsurances));
+        Arrays.sort(typesOfInsurances);
+        System.out.println("Sorted types of insurances in ascending order: " + Arrays.toString(typesOfInsurances));
 
         // Implementing sorting in descending order as well
-        Arrays.sort(advancedTypesOfInsurances, Collections.reverseOrder());
-        System.out.println("Sorted types of insurances in descending order: " + Arrays.toString(advancedTypesOfInsurances));
+        Arrays.sort(typesOfInsurances, Collections.reverseOrder());
+        System.out.println("Sorted types of insurances in descending order: " + Arrays.toString(typesOfInsurances));
     }
 
     public void sortInsurances(List<AllOfInsurances> list) {
 
         // Using 'Collections.sort()' method to sort our ArrayList
-        // Method can be written in a such way
         // Using here our class 'SortedList'
+        // Method can be written in a such way too
         list.sort(new SortedList());
         System.out.println("Sorted list of insurances for some type in ascending order: " + list);
 
