@@ -13,7 +13,7 @@ public class Main {
 
         // Using collections
         // Write it only in the methods
-        // Naming is important
+        // Naming is important here
         Map<String, List<AllOfInsurances>> typeToNameOfInsurance = new HashMap<>();
 
         // Creating lists
@@ -27,7 +27,6 @@ public class Main {
         vehicleList.add(new AllOfInsurances("medical coverage"));
 
         List<AllOfInsurances> casualtyList = new ArrayList<>();
-
         casualtyList.add(new AllOfInsurances("crime insurance"));
         casualtyList.add(new AllOfInsurances("terrorism coverage"));
         casualtyList.add(new AllOfInsurances("kidnap and ransom coverage"));
@@ -45,11 +44,9 @@ public class Main {
         brokerManager.printSomeInfoAboutInsurances();
 
         InsuranceManager insuranceManager = new InsuranceManager();
-        insuranceManager.showAdvancedTypesOfInsurances();
-
-        // In brackets of method 'sortTypesOfInsurances()' using the output of another function
-        insuranceManager.sortTypesOfInsurances(new String[]{insuranceManager.findAndShowTypesOfInsurancesOnSaleInSummer()});
-        insuranceManager.sortInsurances(casualtyList);
+        insuranceManager.printTypesOfInsurancesOnSaleInSummer(insuranceManager.findTypesOfInsurancesOnSaleInSummer());
+        insuranceManager.sortAndShowTypesOfInsurances(InsuranceManager.advancedTypesOfInsurances.values());
+        insuranceManager.sortAndShowInsurances(casualtyList);
     }
 
 }

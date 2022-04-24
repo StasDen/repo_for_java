@@ -6,24 +6,33 @@ import java.util.List;
 // Our class 'Manager' for some sorting functions
 public class InsuranceManager {
 
-    public String[] advancedTypesOfInsurances = {"vehicle", "health", "casualty", "gap", "life", "burial"};
-
-    public void showAdvancedTypesOfInsurances() {
-
-        System.out.println("Our advanced types of insurances: " + Arrays.toString(advancedTypesOfInsurances));
+    public enum advancedTypesOfInsurances {
+        vehicle,
+        health,
+        casualty,
+        gap,
+        life,
+        burial
     }
 
-    // Not all types of insurances are on sale in summer
-    public String findAndShowTypesOfInsurancesOnSaleInSummer() {
+    public advancedTypesOfInsurances[] findTypesOfInsurancesOnSaleInSummer() {
 
-        String[] typesOfInsurancesOnSaleInSummer = {"health", "casualty", "gap", "life"};
-
-        System.out.println("Our types of insurances on sale in summer: " + Arrays.toString(typesOfInsurancesOnSaleInSummer));
-
-        return Arrays.toString(typesOfInsurancesOnSaleInSummer);
+        return new advancedTypesOfInsurances[]{
+                advancedTypesOfInsurances.vehicle,
+                advancedTypesOfInsurances.health,
+                advancedTypesOfInsurances.casualty,
+                advancedTypesOfInsurances.gap,
+                advancedTypesOfInsurances.life,
+                advancedTypesOfInsurances.burial
+        };
     }
 
-    public void sortTypesOfInsurances(String[] typesOfInsurances) {
+    public void printTypesOfInsurancesOnSaleInSummer(advancedTypesOfInsurances[] advancedTypesOfInsurances) {
+
+        System.out.println("Our types of insurances on sale in summer: " + Arrays.toString(advancedTypesOfInsurances));
+    }
+
+    public void sortAndShowTypesOfInsurances(advancedTypesOfInsurances[] typesOfInsurances) {
 
         // Using built-in method to sort our array
         Arrays.sort(typesOfInsurances);
@@ -34,7 +43,7 @@ public class InsuranceManager {
         System.out.println("Sorted types of insurances in descending order: " + Arrays.toString(typesOfInsurances));
     }
 
-    public void sortInsurances(List<AllOfInsurances> list) {
+    public void sortAndShowInsurances(List<AllOfInsurances> list) {
 
         // Using 'Collections.sort()' method to sort our ArrayList
         // Using here our class 'SortedList'

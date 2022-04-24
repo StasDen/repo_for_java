@@ -5,8 +5,8 @@ public class BrokerManager extends Insurances {
 
     public void printSomeInfoAboutInsurances() {
 
-        System.out.println("We can offer you such types of insurances: " + typesOfInsurances[0] + ", "
-                + typesOfInsurances[1] + " and " + typesOfInsurances[2] + ".");
+        System.out.println("We can offer you such types of insurances: " + typesOfInsurances.vehicle + ", "
+                + typesOfInsurances.health + " and " + typesOfInsurances.casualty + ".");
     }
 
 }
