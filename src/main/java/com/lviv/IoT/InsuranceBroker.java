@@ -26,4 +26,9 @@ public record InsuranceBroker(String name, double workExperienceInYears, String 
         this.workSchedule = workSchedule;
     }
 
+    public void printInfoAboutInsuranceBroker(InsuranceBroker insuranceBroker) {
+
+        System.out.println(insuranceBroker);
+    }
+
 }

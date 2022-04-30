@@ -6,14 +6,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // Here you can see all the information about our head insurance broker James Grey
         // Our chain of constructors is used
         InsuranceBroker jamesGrey = new InsuranceBroker();
-        System.out.println(jamesGrey);
+        jamesGrey.printInfoAboutInsuranceBroker(jamesGrey);
 
         // Using collections
         // Write it only in the methods
-        // Naming is important here
         Map<String, List<AllOfInsurances>> typeToNameOfInsurance = new HashMap<>();
 
         // Creating lists
@@ -21,7 +19,6 @@ public class Main {
         List<AllOfInsurances> vehicleList = new ArrayList<>();
 
         // Adding some elements
-        // Class 'AllOfInsurances' is here
         vehicleList.add(new AllOfInsurances("property coverage"));
         vehicleList.add(new AllOfInsurances("liability coverage"));
         vehicleList.add(new AllOfInsurances("medical coverage"));
@@ -32,21 +29,26 @@ public class Main {
         casualtyList.add(new AllOfInsurances("kidnap and ransom coverage"));
         casualtyList.add(new AllOfInsurances("political risk coverage"));
 
-        // Putting it in our map
+        // Putting them in our map
         typeToNameOfInsurance.put("vehicle", vehicleList);
         typeToNameOfInsurance.put("casualty", casualtyList);
 
         // Checking our map
         System.out.println("Our map: " + typeToNameOfInsurance);
 
-        // Using a method from another class
         BrokerManager brokerManager = new BrokerManager();
         brokerManager.printSomeInfoAboutInsurances();
 
         InsuranceManager insuranceManager = new InsuranceManager();
         insuranceManager.printTypesOfInsurancesOnSaleInSummer(insuranceManager.findTypesOfInsurancesOnSaleInSummer());
-        insuranceManager.sortAndShowTypesOfInsurances(InsuranceManager.advancedTypesOfInsurances.values());
-        insuranceManager.sortAndShowInsurances(casualtyList);
+
+        insuranceManager.sortTypesOfInsurancesInAscendingOrderAndShowIt(InsuranceManager.advancedTypesOfInsurances
+                .values());
+        insuranceManager.sortTypesOfInsurancesInDescendingOrderAndShowIt(InsuranceManager.advancedTypesOfInsurances
+                .values());
+
+        insuranceManager.sortInsurancesInAscendingOrderAndShowIt(casualtyList);
+        insuranceManager.sortInsurancesInDescendingOrderAndShowIt(casualtyList);
     }
 
 }
