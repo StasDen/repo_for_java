@@ -1,2 +1,2 @@
 # repoForJava
-Java code is here
+Implemented some little fixes
