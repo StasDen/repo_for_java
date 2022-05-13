@@ -24,6 +24,14 @@ public class BrokerManager extends Insurances {
     public String toCSV() {
 
         return getName();
+      
+// Inheritance is here
+public class BrokerManager extends Insurances {
+
+    public void printSomeInfoAboutInsurances() {
+
+        System.out.println("We can offer you such types of insurances: " + typesOfInsurances.vehicle + ", "
+                + typesOfInsurances.health + " and " + typesOfInsurances.casualty + ".");
     }
 
 }
