@@ -1,7 +1,7 @@
 package com.lviv.IoT;
 
-// An abstract class for inheritance
-public abstract class Insurances {
+// Class for inheritance
+public class Insurances {
 
     // Some info about our insurances
     public enum TypesOfInsurances {

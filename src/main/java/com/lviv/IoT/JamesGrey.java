@@ -2,6 +2,7 @@ package com.lviv.IoT;
 
 public class JamesGrey extends BrokerManager {
 
+    // One more unique variable for csv
     private static String workSchedule = "Monday-Friday";
 
     public final String getWorkSchedule() {

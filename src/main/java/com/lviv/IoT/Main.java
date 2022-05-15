@@ -20,7 +20,7 @@ public class Main {
         // Without 'healthList'(there aren't any different insurances in type 'health')
         List<AllOfInsurances> vehicleList = new ArrayList<>();
 
-        // Adding some elements
+        // Adding some objects
         vehicleList.add(new AllOfInsurances("property coverage"));
         vehicleList.add(new AllOfInsurances("liability coverage"));
         vehicleList.add(new AllOfInsurances("medical coverage"));
@@ -31,7 +31,7 @@ public class Main {
         casualtyList.add(new AllOfInsurances("kidnap and ransom coverage"));
         casualtyList.add(new AllOfInsurances("political risk coverage"));
 
-        // Putting them in our map
+        // Putting out lists into our map
         typeToNameOfInsurance.put("vehicle", vehicleList);
         typeToNameOfInsurance.put("casualty", casualtyList);
 
@@ -44,18 +44,26 @@ public class Main {
         InsuranceManager insuranceManager = new InsuranceManager();
         insuranceManager.printTypesOfInsurancesOnSaleInSummer(insuranceManager.findTypesOfInsurancesOnSaleInSummer());
 
+        // Sorting our arrays
         insuranceManager.sortTypesOfInsurancesInAscendingOrderAndShowIt(InsuranceManager.AdvancedTypesOfInsurances
                 .values());
         insuranceManager.sortTypesOfInsurancesInDescendingOrderAndShowIt(InsuranceManager.AdvancedTypesOfInsurances
                 .values());
 
+        // Sorting our lists
         insuranceManager.sortInsurancesInAscendingOrderAndShowIt(casualtyList);
         insuranceManager.sortInsurancesInDescendingOrderAndShowIt(casualtyList);
 
+        // Creating the necessary list
+        ArrayList<BrokerManager> brokerManagers = new ArrayList<>();
+        brokerManagers.add(new JamesGrey());
+        brokerManagers.add(new AdamSmith());
+        brokerManagers.add(new KateBush());
+
         BrokerManagerWriter brokerManagerWriter = new BrokerManagerWriter();
-        brokerManagerWriter.writeToFileJamesGrey(brokerManagerWriter.getBrokerManagersListForJamesGrey());
-        brokerManagerWriter.writeToFileAdamSmith(brokerManagerWriter.getBrokerManagersListForAdamSmith());
-        brokerManagerWriter.writeToFileKateBush(brokerManagerWriter.getBrokerManagersListForKateBush());
+
+        // Writing this list to 'BrokerManager.csv'
+        brokerManagerWriter.writeToCSV(brokerManagers);
     }
 
 }

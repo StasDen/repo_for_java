@@ -14,7 +14,7 @@ class BrokerManagerTest {
 
     private BrokerManager brokerManager;
 
-    // Creating necessary variables to check printed output
+    // Creating necessary stuff to check the output from 'System.out.println()'
     private final PrintStream standardOut = System.out;
     private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
 
@@ -34,12 +34,12 @@ class BrokerManagerTest {
         System.setOut(standardOut);
     }
 
-    // Func 'trim()' deleting all unnecessary raws
     @Test
     public void testPrintSomeInfoAboutInsurances() {
 
         brokerManager.printSomeInfoAboutInsurances();
 
+        // Func 'trim()' deleting all unnecessary raws
         Assertions.assertEquals("We can offer you such types of insurances: "
                 + Insurances.TypesOfInsurances.VEHICLE + ", " + Insurances.TypesOfInsurances.HEALTH + " and "
                 + Insurances.TypesOfInsurances.CASUALTY + ".", outputStreamCaptor.toString().trim());

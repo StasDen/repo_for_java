@@ -2,11 +2,12 @@ package com.lviv.IoT;
 
 public class BrokerManager extends Insurances {
 
-    private static String name = "Harry";
+    // Necessary variable for our csv
+    private static String position = "Broker manager";
 
     public final String getName() {
 
-        return name;
+        return position;
     }
 
     // Using inheritance
@@ -16,9 +17,10 @@ public class BrokerManager extends Insurances {
                 + TypesOfInsurances.HEALTH + " and " + TypesOfInsurances.CASUALTY + ".");
     }
 
+    // Functions for our csv
     public String getHeaders() {
 
-        return "name";
+        return "Position";
     }
 
     public String toCSV() {

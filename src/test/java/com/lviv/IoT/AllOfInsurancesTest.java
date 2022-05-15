@@ -14,14 +14,10 @@ class AllOfInsurancesTest {
     void setUp() {
 
         allOfInsurances = new AllOfInsurances("For test");
-
-        System.out.println("The test has started");
     }
 
     @AfterEach
     void tearDown() {
-
-        System.out.println("The test has finished");
     }
 
     @Test

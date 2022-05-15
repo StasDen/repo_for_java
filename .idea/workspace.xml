@@ -1,48 +1,354 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="aec6efdf-afb5-4c37-9d85-07b03a123c7e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WaterPump.java" beforeDir="false" />
-    </list>
+    <list default="true" id="ba32d3b4-7a1d-4c0f-9b08-af49505883f3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindBugs-IDEA-Workspace">
+    <analyzeAfterCompile>true</analyzeAfterCompile>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="25VnutskL2By9WHlWmDqTojT0iH" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="usePluginRegistry" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadAnnotationsAutomatically" value="true" />
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="26tDEpsRYXPrZV6Kp4TwkXIqLAo" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="company" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/firstLab" />
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.lviv.IoT" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\vivobook\IdeaProjects\lab2" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.lviv.IoT" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="lab2-1.0-SNAPSHOT.jar" />
+      <command value="lab4-1.0-SNAPSHOT.jar" />
+      <command value="AllOfInsurancesTest" />
+      <command value="SortedListTest" />
+      <command value="InsuranceManagerTest.findTypesOfInsurancesOnSaleInSummer" />
+      <command value="BrokerManagerTest" />
+      <command value="InsuranceManagerTest" />
+      <command value="InsuranceBrokerTest" />
+      <command value="Main" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.com.lviv.IoT.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lviv.IoT.Main" />
+      <module name="lab2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lviv.IoT.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JamesGreyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lviv.IoT.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lviv.IoT" />
+      <option name="MAIN_CLASS_NAME" value="com.lviv.IoT.JamesGreyTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegexTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lviv.IoT.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lviv.IoT" />
+      <option name="MAIN_CLASS_NAME" value="com.lviv.IoT.RegexTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegexTest.mainRegex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lviv.IoT.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lviv.IoT" />
+      <option name="MAIN_CLASS_NAME" value="com.lviv.IoT.RegexTest" />
+      <option name="METHOD_NAME" value="mainRegex" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lviv.IoT.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lviv.IoT" />
+      <option name="MAIN_CLASS_NAME" value="com.lviv.IoT.SortedListTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.com.lviv.IoT.Main" />
+        <item itemvalue="JUnit.RegexTest" />
+        <item itemvalue="JUnit.RegexTest.mainRegex" />
+        <item itemvalue="JUnit.SortedListTest" />
+        <item itemvalue="JUnit.BrokerManagerJamesGreyTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\vivobook\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="aec6efdf-afb5-4c37-9d85-07b03a123c7e" name="Changes" comment="" />
-      <created>1645621356311</created>
+      <changelist id="ba32d3b4-7a1d-4c0f-9b08-af49505883f3" name="Changes" comment="" />
+      <created>1648233892875</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1645621356311</updated>
-      <workItem from="1645621366491" duration="438000" />
-      <workItem from="1646211307768" duration="173000" />
-      <workItem from="1646215198468" duration="278000" />
-      <workItem from="1650043890908" duration="6000" />
+      <updated>1648233892875</updated>
+      <workItem from="1648233894129" duration="3087000" />
+      <workItem from="1648725821447" duration="225000" />
+      <workItem from="1648747049679" duration="482000" />
+      <workItem from="1648747560900" duration="4856000" />
+      <workItem from="1648918974316" duration="5887000" />
+      <workItem from="1649006712747" duration="5315000" />
+      <workItem from="1649092906711" duration="4507000" />
+      <workItem from="1649149719544" duration="3530000" />
+      <workItem from="1649173020272" duration="156000" />
+      <workItem from="1649525568594" duration="4906000" />
+      <workItem from="1649614780665" duration="44000" />
+      <workItem from="1649698689300" duration="4593000" />
+      <workItem from="1649778715881" duration="6339000" />
+      <workItem from="1649869589851" duration="5431000" />
+      <workItem from="1649935991599" duration="8000" />
+      <workItem from="1649958868095" duration="3307000" />
+      <workItem from="1650013268905" duration="52000" />
+      <workItem from="1650046016277" duration="2856000" />
+      <workItem from="1650130377834" duration="5122000" />
+      <workItem from="1650217338518" duration="4184000" />
+      <workItem from="1650299369604" duration="3601000" />
+      <workItem from="1650303055484" duration="2950000" />
+      <workItem from="1650367602966" duration="707000" />
+      <workItem from="1650373618917" duration="1786000" />
+      <workItem from="1650391843758" duration="2736000" />
+      <workItem from="1650451779520" duration="1401000" />
+      <workItem from="1650476491782" duration="3575000" />
+      <workItem from="1650480346607" duration="595000" />
+      <workItem from="1650533317724" duration="75000" />
+      <workItem from="1650559899410" duration="3709000" />
+      <workItem from="1650639159705" duration="2575000" />
+      <workItem from="1650699326850" duration="4150000" />
+      <workItem from="1650703812122" duration="836000" />
+      <workItem from="1650733579310" duration="3203000" />
+      <workItem from="1650818805825" duration="3237000" />
+      <workItem from="1650822334609" duration="3251000" />
+      <workItem from="1650905844082" duration="6728000" />
+      <workItem from="1651080194873" duration="5264000" />
+      <workItem from="1651144866756" duration="12000" />
+      <workItem from="1651158953448" duration="2287000" />
+      <workItem from="1651167039954" duration="9000" />
+      <workItem from="1651167183510" duration="4158000" />
+      <workItem from="1651220374260" duration="8000" />
+      <workItem from="1651221820589" duration="1396000" />
+      <workItem from="1651229138695" duration="1559000" />
+      <workItem from="1651235130789" duration="2088000" />
+      <workItem from="1651253244969" duration="5000" />
+      <workItem from="1651339846494" duration="722000" />
+      <workItem from="1651342830789" duration="404000" />
+      <workItem from="1651343276626" duration="749000" />
+      <workItem from="1651427656741" duration="3284000" />
+      <workItem from="1651509174598" duration="1230000" />
+      <workItem from="1651510465389" duration="1173000" />
+      <workItem from="1651511693485" duration="4509000" />
+      <workItem from="1651592612909" duration="1090000" />
+      <workItem from="1651593767474" duration="1413000" />
+      <workItem from="1651595247118" duration="230000" />
+      <workItem from="1651595564003" duration="197000" />
+      <workItem from="1651595846308" duration="2723000" />
+      <workItem from="1651663831017" duration="1730000" />
+      <workItem from="1651688688535" duration="1300000" />
+      <workItem from="1651742979113" duration="7000" />
+      <workItem from="1651772919670" duration="3163000" />
+      <workItem from="1651854558128" duration="3469000" />
+      <workItem from="1651858108757" duration="2726000" />
+      <workItem from="1651934750428" duration="2165000" />
+      <workItem from="1651993852812" duration="1850000" />
+      <workItem from="1652192892594" duration="6171000" />
+      <workItem from="1652201822895" duration="4615000" />
+      <workItem from="1652206530146" duration="1474000" />
+      <workItem from="1652285720500" duration="90000" />
+      <workItem from="1652285847244" duration="865000" />
+      <workItem from="1652286769014" duration="1913000" />
+      <workItem from="1652288778909" duration="4081000" />
+      <workItem from="1652336820239" duration="262000" />
+      <workItem from="1652337123312" duration="62000" />
+      <workItem from="1652337524831" duration="1022000" />
+      <workItem from="1652338934467" duration="185000" />
+      <workItem from="1652370437269" duration="6180000" />
+      <workItem from="1652376708581" duration="747000" />
+      <workItem from="1652514238075" duration="2909000" />
+      <workItem from="1652517218551" duration="5096000" />
+      <workItem from="1652527450075" duration="468000" />
+      <workItem from="1652529104197" duration="7546000" />
+      <workItem from="1652545298979" duration="3636000" />
+      <workItem from="1652595332211" duration="4531000" />
+      <workItem from="1652633148222" duration="7960000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/lab2$AllOfInsurancesTest.ic" NAME="AllOfInsurancesTest Coverage Results" MODIFIED="1651343599481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.lviv.IoT.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/lab2$All_in_lab2.ic" NAME="All in lab2 Coverage Results" MODIFIED="1651427742278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/lab2$JamesGreyTest.ic" NAME="JamesGreyTest Coverage Results" MODIFIED="1652204472545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.lviv.IoT.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/lab2$Main.ic" NAME="Main Coverage Results" MODIFIED="1652640964722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.lviv.IoT.*</FILTER>
+    </SUITE>
   </component>
 </project>

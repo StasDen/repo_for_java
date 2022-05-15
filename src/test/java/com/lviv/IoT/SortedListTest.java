@@ -14,14 +14,10 @@ class SortedListTest {
     void setUp() {
 
         sortedList = new SortedList();
-
-        System.out.println("The test has started");
     }
 
     @AfterEach
     void tearDown() {
-
-        System.out.println("The test has finished");
     }
 
     @Test
