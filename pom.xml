@@ -6,6 +6,16 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.lviv.IoT</groupId>
+    
+  <artifactId>lab6</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <!-- Build an executable JAR -->
+    <build>
+        <plugins>
+            <plugin>
+              
     <artifactId>lab4</artifactId>
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
@@ -14,7 +24,8 @@
         <plugins>
             <plugin>
                 <!-- Build an executable JAR -->
-                <groupId>org.apache.maven.plugins</groupId>
+                
+              <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>2.4</version>
                 <configuration>
@@ -22,11 +33,87 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
+                            
+                          <mainClass>Main</mainClass>
+
                             <mainClass>com.lviv.IoT.Main</mainClass>
-                        </manifest>
+                        
+                      </manifest>
                     </archive>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.7.1</version>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.8.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.spotbugs</groupId>
+            <artifactId>spotbugs</artifactId>
+            <version>4.6.0</version>
+            <type>pom</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.puppycrawl.tools</groupId>
+            <artifactId>checkstyle</artifactId>
+            <version>10.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.opencsv</groupId>
+            <artifactId>opencsv</artifactId>
+            <version>5.6</version>
+        </dependency>
+    </dependencies>
+
+    <!--    SpotBugs-->
+    <!--    <reporting>-->
+    <!--        <plugins>-->
+    <!--            <plugin>-->
+    <!--                <groupId>com.github.spotbugs</groupId>-->
+    <!--                <artifactId>spotbugs-maven-plugin</artifactId>-->
+    <!--                <version>4.5.3.1-SNAPSHOT</version>-->
+    <!--            </plugin>-->
+    <!--        </plugins>-->
+    <!--    </reporting>-->
+
+    <!--    CheckStyle-->
+    <!--    <reporting>-->
+    <!--        <plugins>-->
+    <!--            <plugin>-->
+    <!--                <groupId>org.apache.maven.plugins</groupId>-->
+    <!--                <artifactId>maven-checkstyle-plugin</artifactId>-->
+    <!--                <version>3.1.2</version>-->
+    <!--                <reportSets>-->
+    <!--                    <reportSet>-->
+    <!--                        <reports>-->
+    <!--                            <report>checkstyle</report>-->
+    <!--                        </reports>-->
+    <!--                    </reportSet>-->
+    <!--                </reportSets>-->
+    <!--            </plugin>-->
+    <!--        </plugins>-->
+    <!--    </reporting>-->
+
         </plugins>
     </build>
 
@@ -34,5 +121,4 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
-
 </project>

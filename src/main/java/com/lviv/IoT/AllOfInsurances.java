@@ -3,7 +3,11 @@ package com.lviv.IoT;
 // A class for our lists
 public class AllOfInsurances {
 
-    public String nameOfInsurance;
+    private final String nameOfInsurance;
+
+    public AllOfInsurances(final String nameOfInsurance) {
+    
+      public String nameOfInsurance;
 
     public AllOfInsurances(String nameOfInsurance) {
 
@@ -11,9 +15,17 @@ public class AllOfInsurances {
     }
 
     // Function to print info in the right way
-    public String toString() {
+    public final String toString() {
+    
+      public String toString() {
 
         return this.nameOfInsurance;
+    }
+
+    // Using one more getter for private variable
+    public final String getNameOfInsurance() {
+
+        return nameOfInsurance;
     }
 
 }

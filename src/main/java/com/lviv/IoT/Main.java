@@ -1,5 +1,13 @@
 package com.lviv.IoT;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class Main {
+
+    public static void main(final String[] args) {
 import java.util.*;
 
 public class Main {
@@ -10,6 +18,7 @@ public class Main {
         InsuranceBroker jamesGrey = new InsuranceBroker();
         jamesGrey.printInfoAboutInsuranceBroker(jamesGrey);
 
+        // Using collections(write it only in the methods)
         // Using collections
         // Write it only in the methods
         Map<String, List<AllOfInsurances>> typeToNameOfInsurance = new HashMap<>();
@@ -42,6 +51,9 @@ public class Main {
         InsuranceManager insuranceManager = new InsuranceManager();
         insuranceManager.printTypesOfInsurancesOnSaleInSummer(insuranceManager.findTypesOfInsurancesOnSaleInSummer());
 
+        insuranceManager.sortTypesOfInsurancesInAscendingOrderAndShowIt(InsuranceManager.AdvancedTypesOfInsurances
+                .values());
+        insuranceManager.sortTypesOfInsurancesInDescendingOrderAndShowIt(InsuranceManager.AdvancedTypesOfInsurances
         insuranceManager.sortTypesOfInsurancesInAscendingOrderAndShowIt(InsuranceManager.advancedTypesOfInsurances
                 .values());
         insuranceManager.sortTypesOfInsurancesInDescendingOrderAndShowIt(InsuranceManager.advancedTypesOfInsurances
@@ -49,6 +61,11 @@ public class Main {
 
         insuranceManager.sortInsurancesInAscendingOrderAndShowIt(casualtyList);
         insuranceManager.sortInsurancesInDescendingOrderAndShowIt(casualtyList);
+
+        BrokerManagerWriter brokerManagerWriter = new BrokerManagerWriter();
+        brokerManagerWriter.writeToFileJamesGrey(brokerManagerWriter.getBrokerManagersListForJamesGrey());
+        brokerManagerWriter.writeToFileAdamSmith(brokerManagerWriter.getBrokerManagersListForAdamSmith());
+        brokerManagerWriter.writeToFileKateBush(brokerManagerWriter.getBrokerManagersListForKateBush());
     }
 
 }

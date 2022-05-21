@@ -1,11 +1,30 @@
 package com.lviv.IoT;
 
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.*;
 import java.util.List;
 
 // Our class 'Manager' for some sorting functions
 public class InsuranceManager {
 
+    public enum AdvancedTypesOfInsurances {
+        VEHICLE,
+        HEALTH,
+        CASUALTY,
+        GAP,
+        LIFE,
+        BURIAL
+    }
+
+    // 'values()' enum method returns an array
+    public final AdvancedTypesOfInsurances[] findTypesOfInsurancesOnSaleInSummer() {
+
+        return AdvancedTypesOfInsurances.values();
+    }
+
+    public final void printTypesOfInsurancesOnSaleInSummer(final AdvancedTypesOfInsurances[] advancedTypesOfInsurances) {
+      
     public enum advancedTypesOfInsurances {
         vehicle,
         health,
@@ -27,6 +46,8 @@ public class InsuranceManager {
     }
 
     // Using built-in method to sort our array
+    public final void sortTypesOfInsurancesInAscendingOrderAndShowIt(final AdvancedTypesOfInsurances[] typesOfInsurances) {
+      
     public void sortTypesOfInsurancesInAscendingOrderAndShowIt(advancedTypesOfInsurances[] typesOfInsurances) {
 
         Arrays.sort(typesOfInsurances);
@@ -34,6 +55,8 @@ public class InsuranceManager {
     }
 
     // Implementing sorting in descending order as well
+    public final void sortTypesOfInsurancesInDescendingOrderAndShowIt(final AdvancedTypesOfInsurances[] typesOfInsurances) {
+      
     public void sortTypesOfInsurancesInDescendingOrderAndShowIt(advancedTypesOfInsurances[] typesOfInsurances) {
 
         Arrays.sort(typesOfInsurances, Collections.reverseOrder());
@@ -41,6 +64,8 @@ public class InsuranceManager {
     }
 
     // Using 'Collections.sort()' method to sort our ArrayList
+    public final void sortInsurancesInAscendingOrderAndShowIt(final List<AllOfInsurances> list) {
+      
     public void sortInsurancesInAscendingOrderAndShowIt(List<AllOfInsurances> list) {
 
         list.sort(new SortedList());
@@ -48,9 +73,14 @@ public class InsuranceManager {
     }
 
     // Implementing sorting in descending order using lambda
+    public final void sortInsurancesInDescendingOrderAndShowIt(final List<AllOfInsurances> list) {
+
+        list.sort(((a, b) -> b.getNameOfInsurance().compareTo(a.getNameOfInsurance())));
+      
     public void sortInsurancesInDescendingOrderAndShowIt(List<AllOfInsurances> list) {
 
         list.sort(((a, b) -> b.nameOfInsurance.compareTo(a.nameOfInsurance)));
+      
         System.out.println("Sorted list of insurances for some type in descending order: " + list);
     }
 

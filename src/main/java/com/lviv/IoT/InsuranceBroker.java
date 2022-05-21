@@ -7,7 +7,22 @@ public record InsuranceBroker(String name, double workExperienceInYears, String 
         this("James Grey");
     }
 
-    public InsuranceBroker(String name) {
+    public InsuranceBroker(final String name) {
+        this(name, 10.5);
+    }
+
+    public InsuranceBroker(final String name, final double workExperienceInYears) {
+        this(name, workExperienceInYears, "Green St.");
+    }
+
+    public InsuranceBroker(final String name, final double workExperienceInYears, final String jobAddress) {
+        this(name, workExperienceInYears, jobAddress, "Monday-Friday");
+    }
+
+    // Method 'toString()' for our object isn't needed
+    public void printInfoAboutInsuranceBroker(final InsuranceBroker insuranceBroker) {
+
+      public InsuranceBroker(String name) {
         this(name, 10.5);
     }
 
