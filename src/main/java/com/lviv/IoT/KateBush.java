@@ -2,7 +2,8 @@ package com.lviv.IoT;
 
 public class KateBush extends BrokerManager {
 
-    private static String professionalRewards = "Diploma for being a professional";
+    // Necessary variable for csv table
+    private static String professionalRewards = "Best broker manager in 2021";
 
     public final String getProfessionalRewards() {
 

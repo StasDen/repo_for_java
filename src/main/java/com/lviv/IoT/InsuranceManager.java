@@ -8,10 +8,11 @@ import java.util.List;
 // Our class 'Manager' for some sorting functions
 public class InsuranceManager {
 
+    // Using enum type
     public enum AdvancedTypesOfInsurances {
         VEHICLE,
         HEALTH,
-        CASUALTY,
+        CASUALTY, // Check naming convention
         GAP,
         LIFE,
         BURIAL
@@ -68,6 +69,7 @@ public class InsuranceManager {
       
     public void sortInsurancesInAscendingOrderAndShowIt(List<AllOfInsurances> list) {
 
+        // Using 'SortedList' class to do this
         list.sort(new SortedList());
         System.out.println("Sorted list of insurances for some type in ascending order: " + list);
     }

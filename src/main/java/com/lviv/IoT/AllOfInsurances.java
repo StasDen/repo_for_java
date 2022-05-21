@@ -1,10 +1,11 @@
 package com.lviv.IoT;
 
-// A class for our lists
+// Class for our list with objects
 public class AllOfInsurances {
 
     private final String nameOfInsurance;
 
+    // Necessary constructor with parameter
     public AllOfInsurances(final String nameOfInsurance) {
     
       public String nameOfInsurance;

@@ -1,98 +1,48 @@
 package com.lviv.IoT;
 
-import java.io.FileWriter;
-import java.util.ArrayList;
+import java.io.BufferedWriter;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.nio.charset.StandardCharsets;
 import java.util.List;
 
-import com.opencsv.bean.StatefulBeanToCsv;
-import com.opencsv.bean.StatefulBeanToCsvBuilder;
-
-// Class for writing objects to CSV
 public class BrokerManagerWriter {
 
-    // Creating some lists for adding objects to CSV file
-    private final List<BrokerManager> brokerManagersListForJamesGrey = new ArrayList<>();
+    // Writing function
+    public final void writeToCSV(List<BrokerManager> brokerManagers) {
 
-    public final List<BrokerManager> getBrokerManagersListForJamesGrey() {
-
-        return this.brokerManagersListForJamesGrey;
-    }
-
-    private final List<BrokerManager> brokerManagersListForAdamSmith = new ArrayList<>();
-
-    public final List<BrokerManager> getBrokerManagersListForAdamSmith() {
-
-        return this.brokerManagersListForAdamSmith;
-    }
-
-    private final List<BrokerManager> brokerManagersListForKateBush = new ArrayList<>();
-
-    public final List<BrokerManager> getBrokerManagersListForKateBush() {
-
-        return this.brokerManagersListForKateBush;
-    }
-
-    // Putting JamesGrey object to CSV table
-    public final void writeToFileJamesGrey(final List<BrokerManager> brokerManagersListForJamesGrey) {
-
-        // Name of our new CSV file
-        final String locationOfCSV = "BrokerManagerJamesGrey.csv";
+        // Reminder
+        System.out.println("Check out our BrokerManagers.csv");
 
         try {
 
-            FileWriter writer = new FileWriter(locationOfCSV);
+            // Writer object
+            BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("BrokerManagers.csv"),
+                    StandardCharsets.UTF_8));
 
-            brokerManagersListForJamesGrey.add(new JamesGrey());
+            // Writing objects to our csv table
+            for (BrokerManager brokerManager : brokerManagers) {
 
-            StatefulBeanToCsvBuilder<BrokerManager> builder = new StatefulBeanToCsvBuilder<>(writer);
-            StatefulBeanToCsv<BrokerManager> beanWriter = builder.build();
+                // Headers
+                String oneLine = brokerManager.getHeaders();
 
-            beanWriter.write(brokerManagersListForJamesGrey);
-            writer.close();
-        } catch (Exception e) {
+                // Values
+                String otherLine = brokerManager.toCSV();
 
-            e.printStackTrace();
+                bw.write(oneLine);
+                bw.newLine(); // Dividing output table
+                bw.write(otherLine);
+                bw.newLine();
+            }
+
+            bw.close(); // Do not forget to close the stream!
         }
-    }
 
-    public final void writeToFileAdamSmith(final List<BrokerManager> brokerManagersListForAdamSmith) {
+        // Catching all the exceptions
+        catch (IOException e) {
 
-        final String locationOfCSV = "BrokerManagerAdamSmith.csv";
-
-        try {
-
-            FileWriter writer = new FileWriter(locationOfCSV);
-
-            brokerManagersListForAdamSmith.add(new AdamSmith());
-
-            StatefulBeanToCsvBuilder<BrokerManager> builder = new StatefulBeanToCsvBuilder<>(writer);
-            StatefulBeanToCsv<BrokerManager> beanWriter = builder.build();
-
-            beanWriter.write(brokerManagersListForAdamSmith);
-            writer.close();
-        } catch (Exception e) {
-
-            e.printStackTrace();
-        }
-    }
-
-    public final void writeToFileKateBush(final List<BrokerManager> brokerManagersListForKateBush) {
-
-        final String locationOfCSV = "BrokerManagerKateBush.csv";
-
-        try {
-
-            FileWriter writer = new FileWriter(locationOfCSV);
-
-            brokerManagersListForKateBush.add(new KateBush());
-
-            StatefulBeanToCsvBuilder<BrokerManager> builder = new StatefulBeanToCsvBuilder<>(writer);
-            StatefulBeanToCsv<BrokerManager> beanWriter = builder.build();
-
-            beanWriter.write(brokerManagersListForKateBush);
-            writer.close();
-        } catch (Exception e) {
-
+            // Now we can see the error in the terminal
             e.printStackTrace();
         }
     }

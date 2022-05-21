@@ -20,9 +20,9 @@ class InsuranceManagerTest {
     private InsuranceManager insuranceManager = new InsuranceManager();
 
     private final PrintStream standardOut = System.out;
-
     private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
 
+    // Creating the array with enum elements
     InsuranceManager.AdvancedTypesOfInsurances[] advancedTypesOfInsurancesForTest = {
             InsuranceManager.AdvancedTypesOfInsurances.GAP,
             InsuranceManager.AdvancedTypesOfInsurances.BURIAL,
@@ -59,6 +59,7 @@ class InsuranceManagerTest {
         // Calling print function at first
         insuranceManager.printTypesOfInsurancesOnSaleInSummer(advancedTypesOfInsurancesForTest);
 
+        // And now testing the output
         Assertions.assertEquals("Our types of insurances on sale in summer: "
                 + Arrays.toString(advancedTypesOfInsurancesForTest), outputStreamCaptor.toString().trim());
     }
@@ -84,6 +85,7 @@ class InsuranceManagerTest {
     @Test
     public void testSortInsurancesInAscendingOrderAndShowIt() {
 
+        // Adding the necessary ArrayList
         List<AllOfInsurances> casualtyList = new ArrayList<>();
         casualtyList.add(new AllOfInsurances("crime insurance"));
         casualtyList.add(new AllOfInsurances("terrorism coverage"));

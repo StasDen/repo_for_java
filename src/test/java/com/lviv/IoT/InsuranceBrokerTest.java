@@ -7,20 +7,17 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 
 class InsuranceBrokerTest {
+
     private InsuranceBroker insuranceBroker;
 
     @BeforeEach
     void setUp() {
 
         insuranceBroker = new InsuranceBroker();
-
-        System.out.println("The test has started");
     }
 
     @AfterEach
     void tearDown() {
-
-        System.out.println("The test has finished");
     }
 
     @Test

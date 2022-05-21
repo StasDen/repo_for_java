@@ -28,6 +28,7 @@ class AdamSmithTest {
 
         String jobAddress = "Oxford Street";
 
+        // Using 'Assertions.assertEquals()' to test the output
         Assertions.assertEquals(jobAddress, adamSmith.getJobAddress());
     }
 
