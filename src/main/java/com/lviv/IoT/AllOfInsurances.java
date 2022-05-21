@@ -7,12 +7,18 @@ public class AllOfInsurances {
 
     // Necessary constructor with parameter
     public AllOfInsurances(final String nameOfInsurance) {
+    
+      public String nameOfInsurance;
+
+    public AllOfInsurances(String nameOfInsurance) {
 
         this.nameOfInsurance = nameOfInsurance;
     }
 
     // Function to print info in the right way
     public final String toString() {
+    
+      public String toString() {
 
         return this.nameOfInsurance;
     }

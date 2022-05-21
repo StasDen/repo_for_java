@@ -8,12 +8,19 @@ import java.util.Map;
 public class Main {
 
     public static void main(final String[] args) {
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
 
         // Our chain of constructors is used
         InsuranceBroker jamesGrey = new InsuranceBroker();
         jamesGrey.printInfoAboutInsuranceBroker(jamesGrey);
 
         // Using collections(write it only in the methods)
+        // Using collections
+        // Write it only in the methods
         Map<String, List<AllOfInsurances>> typeToNameOfInsurance = new HashMap<>();
 
         // Creating lists
@@ -48,6 +55,9 @@ public class Main {
         insuranceManager.sortTypesOfInsurancesInAscendingOrderAndShowIt(InsuranceManager.AdvancedTypesOfInsurances
                 .values());
         insuranceManager.sortTypesOfInsurancesInDescendingOrderAndShowIt(InsuranceManager.AdvancedTypesOfInsurances
+        insuranceManager.sortTypesOfInsurancesInAscendingOrderAndShowIt(InsuranceManager.advancedTypesOfInsurances
+                .values());
+        insuranceManager.sortTypesOfInsurancesInDescendingOrderAndShowIt(InsuranceManager.advancedTypesOfInsurances
                 .values());
 
         // Sorting our lists
