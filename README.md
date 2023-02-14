@@ -1,4 +1,4 @@
-# repoForJava
+# repo_for_java
 
 ### java_labs
 
